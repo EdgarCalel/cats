@@ -4,8 +4,6 @@ import Header from '../components/Header.svelte'
 import TimeLine from '../components/TimeLine.svelte'
 import Sidebar from '../components/Sidebar.svelte'
 import Main from '../components/Main.svelte'
-import About from '../../../svelte/src/components/About.svelte'
-import App from '../../../svelte/src/App.svelte'
 
 let data=[];
 //const API2='https://rickandmortyapi.com/api/character'
