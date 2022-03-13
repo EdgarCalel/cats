@@ -6,12 +6,14 @@ import Sidebar from '../components/Sidebar.svelte'
 import Main from '../components/Main.svelte'
 
 let data=[];
-//const API2='https://rickandmortyapi.com/api/character'
-const API='https://kittygram-api.vercel.app'
+const API='https://rickandmortyapi.com/api/character'
+//const API='https://kittygram-api.vercel.app'
 onMount(async ()=>{
    const toto =  await fetch(API)
      const result=  toto.json();
-     data= await result
+     const  dataPre = await result
+     data= await dataPre.results
+     
 //    const  DataAfter = await result.results
 //     const data2 = await DataAfter.map(el=>{
 //         return{
@@ -37,9 +39,13 @@ onMount(async ()=>{
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-  :global(body){
-background-color: #fafafa;
-color: rgba(38, 38, 38, 0.7);
+  :global(body.dark-mode){
+          background-color: #1d3040 ;
+          color: #0559e9
+      }
+  :global(body.Main){
+
+color: rgba(153, 0, 0, 0.7);
 font-family: 'Lato', sans-serif;
 margin: 0;
 padding: 0;
@@ -52,6 +58,6 @@ padding: 0;
 
 <Header />
     <Main>
-        <TimeLine posts={data.posts} />
-        <Sidebar {...data.user} />
+        <TimeLine posts={data} />
+        <Sidebar {...data} />
     </Main>

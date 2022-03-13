@@ -5,9 +5,11 @@
 
 <style>
     .Header {
-      background-color: white;
+      background-color: rgb(253, 253, 253);
       position: fixed;
       width: 100%;
+      margin: 0;
+      padding: 0;
     }
     .Header-container {
       grid-template-columns: minmax(auto, 936px);
@@ -17,10 +19,14 @@
       border-bottom: 1px solid rgba(38, 38, 38, 0.4);
     }
     .Header-content {
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0.5em;
+      padding: 0;
+      margin: 0;
+      
+   
     }
     .Header ul {
       list-style: none;
@@ -63,7 +69,7 @@
 <div class="Header">
     <div class="Header-container">
       <div class="Header-content">
-              <h1>Cats-gram</h1>
+              <h1>Mortystagram</h1>
               <div class="Header-nav">
                   <ul>
                       <li>

@@ -1,3 +1,12 @@
+<script>
+	import Button from './Button.svelte';
+ let styles = {darkmode: false}
+
+const toogle =()=>{
+    styles.darkmode = !styles.darkmode
+    window.document.body.classList.toggle('dark-mode')
+}
+</script>
 <style>
     .Stories {
       border: 1px solid rgba(219, 219, 219, 1);
@@ -55,7 +64,12 @@
       background-origin: border-box;
       background-clip: content-box, border-box;
     }
+  
   </style>
+  <Button
+  text ={styles.darkmode ? '🌞' : '🌒'}
+  on:click={toogle}
+  />
 <div class="Stories">
     <div class="Stories-container">
         <div class="Stories-head">

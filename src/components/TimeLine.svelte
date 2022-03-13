@@ -11,6 +11,7 @@
 <div class="TimeLine">
    <div class="Timeline-container">
      {#each posts as post}
+
      <Card {...post}/>
      {/each}
    </div>

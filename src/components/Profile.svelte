@@ -3,6 +3,13 @@
   export let nickname;
 </script>
 <style>
+  .Profile{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
     .Profile-content {
       display: flex;
       align-items: center;

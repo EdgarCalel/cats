@@ -14,6 +14,6 @@
 <div class="Footer">
     <div class="Footer-container">
             <span id="year">© {year}</span>
-            PUGSTAGRAM FROM PLATZI
+            Mortystagram 2022 Edgar k-ll
     </div>
 </div>

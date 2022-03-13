@@ -5,12 +5,11 @@
     import Share from './share.svelte';
     import {blur } from 'svelte/transition'
   
-    export let avatar;
-    export let username;
-    export let location;
-    export let photo;
-    export let postComment;
-    export let comments;
+    export let image; //
+    export let name; //
+    export let location; // 
+    export let status;
+    export let episode;
     
 let isModal = false;
 let like = false;
@@ -34,6 +33,7 @@ const handleBookmark =()=>bookmark = !bookmark;
       border-radius: 4px;
       background-color: white;
       margin: 0 0 2em 0;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     .Card-Header {
       display: flex;
@@ -152,9 +152,9 @@ const handleBookmark =()=>bookmark = !bookmark;
    <div class="Card-container">
        <div class="Card-Header">
            <div class="Card-user">
-               <img src={avatar} alt={username}>
-          <h2>{username}l<span>
-            {location}
+               <img src={image} alt={name}>
+          <h2>{name.split(' ')[0]}l<span>
+            {location.name}
           </span></h2>
             </div>
             <div class="Card-settings">
@@ -163,7 +163,7 @@ const handleBookmark =()=>bookmark = !bookmark;
        </div>
        <div class="Card-photo">
            <figure on:dblclick={handleLike}>
-               <img src={photo} alt={username}>
+               <img src={image} alt={name}>
            </figure>
        </div>
        <div class="Card-icons">
@@ -183,9 +183,11 @@ const handleBookmark =()=>bookmark = !bookmark;
            </div>
        </div>
        <div class="Card-description">
-           <h3>{username}</h3>
-           <span>{postComment}</span>
-       </div>
-       <Comments {comments} />
+           <h3>nombre: {name}</h3>
+           <h3>Status: {status}</h3><br>
+           <h3>Espisodios: {episode.length}</h3>
+           <span></span>       
+          </div>
+       <Comments  />
    </div> 
 </div>

@@ -1,6 +1,7 @@
 <script>
-  export let comments=[]
-
+  export let episode=[]
+  console.log(episode.length)
+export let comentarios =[]
   function addComment(e) {
     const msg = e.target.text.value;
     if (msg.length > 3) {
@@ -9,7 +10,7 @@
         text: msg,
         username: "Edgar Calel",
       };
-      comments = [...comments, message];
+      comentarios = [...comentarios, message];
       e.target.text.value = "";
     }
   }
@@ -69,13 +70,14 @@
   
 <div class="Comments">
     <div class="Comments-content">
-      {#each comments as comment (comment.id)}
+      {#each comentarios as comment (comment.id)}
       <div class="Comments-users">
+       
         <h3>{comment.username}</h3>
         <span>{comment.text}</span>
       </div>
 {:else}
-<div><p>loading-...</p></div>
+<div><p>.Se el primero es dar un comentario</p></div>
       {/each}
 
 
