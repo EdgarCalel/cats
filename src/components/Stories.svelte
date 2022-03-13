@@ -65,7 +65,7 @@
         <div class="Stories-items">
             <div class="Stories-item">
                 <div class="Stories-item-box">
-                    <img src="https://arepa.s3.amazonaws.com/oscar.png" alt="" />
+                    <img src="https://scontent.fgua3-4.fna.fbcdn.net/v/t1.6435-9/123120989_3675657519151447_6278233892572714214_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=7CSn1WhrxHAAX8DNg7G&_nc_oc=AQnWpV2lSLmANgfiaZN0dLK2hhZlF7bUefoV2OcClISAL1TFSPxTmlipXk1EqRll8f2o4-DgD94tXnvIt3IaFe9q&_nc_ht=scontent.fgua3-4.fna&oh=00_AT-osppsoF3CQ9iVzkpWMQ5tM-YnMUVrCMRVrwFwiz8LJw&oe=6252CD00" alt="" />
                 </div>
                 <h2>Edgarkll <span>10 horas</span></h2>
             </div>
